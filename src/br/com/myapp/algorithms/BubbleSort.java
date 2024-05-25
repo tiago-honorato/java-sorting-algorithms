@@ -5,7 +5,21 @@ public class BubbleSort {
 	public static void main(String[] args) {
 		
 		//inicialização do array
-		int[] numbers = {64, 34, 25, 12, 22, 11, 90};
+		int numbers[] = new int[10];
+		
+		for(int i = 0; i < numbers.length; i++) {
+			
+			numbers[i] = (int) Math.floor(Math.random() * numbers.length);
+			
+		}
+		
+		System.out.println("Desordenado");
+		for(int i = 0; i < numbers.length; i++) {
+			
+			System.out.println(numbers[i] + " ");
+			
+		}
+		
 		
 		//Loop para o comprimento do array
 		for(int i = 0; i < numbers.length - 1; i++) {
